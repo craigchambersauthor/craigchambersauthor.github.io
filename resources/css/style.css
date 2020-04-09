@@ -1,9 +1,9 @@
 :root {
-  --red: #6b0f1a;
-  --black: #000000;
-  --white: #fdfffc;
-  --blue: #18314f;
-  --yellow: #faa916;
+  --teal: #437c90;
+  --black: #0b4f6c;
+  --white: #ffffff;
+  --blue: #1e91d6;
+  --midblue: #006989;
   --headingTextSize: 2rem;
 }
 
@@ -14,8 +14,7 @@
 }
 
 body {
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--white);
 }
 
 .nav {
@@ -23,7 +22,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  background-color: var(--red);
+  background-color: var(--teal);
   color: var(--white);
 }
 
@@ -37,4 +36,107 @@ body {
   flex-basis: 100%;
   text-align: center;
   font-size: var(--headingTextSize);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 1rem 0; */
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "image"
+    "text";
+  margin: 0.6rem 1rem;
+  box-shadow: 10px 10px 20px rgba(80, 79, 79, 0.192),
+    -5px -5px 20px rgba(80, 79, 79, 0.192);
+  /* max-width: 100%; */
+  /* min-width: calc(100wh - 2rem); */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card .textBox {
+  grid-area: text;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  min-width: calc(100vw - 2rem);
+}
+
+.card .image {
+  max-width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  grid-area: image;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card .cardTitle {
+  font-size: 1.8rem;
+  color: var(--midblue);
+  margin: 1.8rem 0 0.4rem 0;
+}
+
+.card .description {
+  font-size: 1.4rem;
+  color: var(--black);
+  line-height: 1.8rem;
+}
+
+.card .signUpButton {
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+  width: 80%;
+  border: 1px solid var(--black);
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.6rem;
+  margin: 2.6rem 1rem 1rem 1rem;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+@media screen and (min-width: 964px) {
+  .nav {
+    margin-bottom: 4rem;
+  }
+
+  .main {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "image text";
+    margin: 1rem 4rem;
+    min-height: 500px;
+    border-radius: 0;
+  }
+
+  .card .image:nth-child(odd) {
+    border-radius: 0;
+  }
+
+  .card:nth-child(even) {
+    grid-template-areas: "text image";
+  }
+
+  .card .textBox {
+    align-self: center;
+    padding: 1rem 4rem;
+    min-width: calc(100vw / 2 - 4rem);
+  }
 }

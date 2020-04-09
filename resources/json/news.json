@@ -1,0 +1,26 @@
+[
+  {
+    "image": "../../resources/images/craigchambers.jpg",
+    "title": "Card Title",
+    "description": "This is the card description",
+    "callToAction": "Click me"
+  },
+  {
+    "image": "../../resources/images/craigchambers.jpg",
+    "title": "TalkFit",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla est in vehicula molestie. Ut id dui fermentum, posuere ipsum vitae, sagittis metus. Mauris leo magna, laoreet eget erat ut, congue vulputate sapien. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla est in vehicula molestie. Ut id dui fermentum, posuere ipsum vitae, sagittis metus. Mauris leo magna, laoreet eget erat ut, congue vulputate sapien. ",
+    "callToAction": "Talkfit website"
+  },
+  {
+    "image": "../../resources/images/craigchambers.jpg",
+    "title": "Card Title",
+    "description": "This is the card description. This is the card description. This is the card description",
+    "callToAction": "Click me"
+  },
+  {
+    "image": "../../resources/images/craigchambers.jpg",
+    "title": "Card Title",
+    "description": "This is the card description. This is the card description",
+    "callToAction": "Click me"
+  }
+]
