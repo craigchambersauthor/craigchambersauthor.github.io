@@ -1,0 +1,40 @@
+:root {
+  --red: #6b0f1a;
+  --black: #000000;
+  --white: #fdfffc;
+  --blue: #18314f;
+  --yellow: #faa916;
+  --headingTextSize: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.nav .icon {
+  font-size: var(--headingTextSize);
+  color: var(--white);
+  padding-left: 1rem;
+}
+
+.nav .navTitle {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: var(--headingTextSize);
+}
