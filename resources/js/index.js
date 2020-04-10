@@ -54,14 +54,16 @@ function getJson() {
           description.innerHTML = element.description;
           textBox.appendChild(description);
 
-          var button = document.createElement("button");
-          button.classList.add("signUpButton");
-          button.id = "signUpButton";
-          button.addEventListener("click", function () {
-            console.log("button clicked");
-          });
-          button.innerText = element.callToAction;
-          textBox.appendChild(button);
+          if (element.buttonRequired === true) {
+            var button = document.createElement("button");
+            button.classList.add("signUpButton");
+            button.id = "signUpButton";
+            button.addEventListener("click", function () {
+              window.location.href = element.buttonLink;
+            });
+            button.innerText = element.callToAction;
+            textBox.appendChild(button);
+          }
 
           main.appendChild(card);
         });

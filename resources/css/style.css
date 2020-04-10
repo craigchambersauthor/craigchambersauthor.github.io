@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
 :root {
   --teal: #437c90;
   --black: #0b4f6c;
@@ -15,6 +17,7 @@
 
 body {
   background-color: var(--white);
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav {
@@ -137,6 +140,6 @@ body {
   .card .textBox {
     align-self: center;
     padding: 1rem 4rem;
-    min-width: calc(100vw / 2 - 4rem);
+    min-width: calc(1024px / 2 - 4rem);
   }
 }
