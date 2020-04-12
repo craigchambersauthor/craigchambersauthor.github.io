@@ -58,12 +58,13 @@ body {
   margin: 0.6rem 1rem;
   box-shadow: 10px 10px 20px rgba(80, 79, 79, 0.192),
     -5px -5px 20px rgba(80, 79, 79, 0.192);
-  /* max-width: 100%; */
-  /* min-width: calc(100wh - 2rem); */
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .card .textBox {
@@ -82,8 +83,8 @@ body {
   border-top-right-radius: 1rem;
   grid-area: image;
   height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-size: contain; */
 }
 
 .card .cardTitle {
@@ -102,8 +103,9 @@ body {
   padding: 1rem 1rem 1rem 1rem;
   border-radius: 1rem;
   width: 80%;
-  border: 1px solid var(--black);
+  border: none;
   background-color: var(--blue);
+  box-shadow: 4px 4px 10px rgb(202, 201, 201);
   color: var(--white);
   font-size: 1.6rem;
   margin: 2.6rem 1rem 1rem 1rem;
@@ -129,12 +131,21 @@ body {
     border-radius: 0;
   }
 
-  .card .image:nth-child(odd) {
+  .image:nth-child(odd) {
     border-radius: 0;
   }
 
-  .card:nth-child(even) {
+  .image:nth-child(even) {
+    border-radius: 0;
+    /* margin-left: 4rem; */
+  }
+
+  .card:nth-child(odd) {
     grid-template-areas: "text image";
+  }
+
+  .card:nth-child(even) {
+    grid-template-areas: "image text";
   }
 
   .card .textBox {

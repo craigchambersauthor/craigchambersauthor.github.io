@@ -35,9 +35,9 @@ function getJson() {
           var card = document.createElement("div");
           card.classList.add("card");
 
-          var image = document.createElement("div");
+          var image = document.createElement("img");
           image.classList.add("image");
-          image.style.backgroundImage = "url(" + element.image + ")";
+          image.src = element.image;
           card.appendChild(image);
 
           var textBox = document.createElement("div");
