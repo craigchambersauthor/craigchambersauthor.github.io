@@ -62,13 +62,13 @@ a:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 10rem);
 }
 
 .footer {
   background-color: var(--gray);
   color: var(--mid);
-  height: 4rem;
+  height: 6rem;
 }
 
 .footer .social {
@@ -96,6 +96,14 @@ a:active {
 
   .nav-link {
     font-size: 2rem;
+  }
+
+  .main {
+    height: calc(100vh - 8rem);
+  }
+
+  .footer {
+    height: 4rem;
   }
 
   .footer .social {
