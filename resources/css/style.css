@@ -82,3 +82,15 @@ a:active {
   font-size: 8vh;
   padding: 0.4rem;
 }
+
+@media only screen and (min-width: 800px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .footer .social {
+    justify-content: flex-end;
+  }
+}
