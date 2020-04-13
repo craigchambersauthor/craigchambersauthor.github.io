@@ -62,7 +62,19 @@ a:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: calc(100vh - 14rem);
+  /* height: calc(100vh - 14rem); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .card {
+  /* height: calc(90vh - 14rem); */
+  width: 90vw;
+  background-color: var(--mid);
+  border-radius: 1rem;
+  margin: 2rem 0;
 }
 
 .footer {
