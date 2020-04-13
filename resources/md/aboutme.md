@@ -1,6 +1,4 @@
-#About Me
-
-Hello, my name is Craig Chambers. I was born in Maidstone, Kent in 1992. My parents split when I was about 5 but fortunately, I was able to still have my dad in my life. I spent most of my childhood living near the historic town of Chatham, Kent with my mum and sister where I attended St Thomas More primary school and later The Malling School (secondary) near the town of Maidstone. My dad met my stepmother a little while after which gave me a stepbrother and stepsister.
+I was born in Maidstone, Kent in 1992. My parents split when I was about 5 but fortunately, I was able to still have my dad in my life. I spent most of my childhood living near the historic town of Chatham, Kent with my mum and sister where I attended St Thomas More primary school and later The Malling School (secondary) near the town of Maidstone. My dad met my stepmother a little while after which gave me a stepbrother and stepsister.
 
 I visited my dad in the school holidays and every other weekend in Surrey where he lived at the time. It was during my childhood and early teens when I started to realise that I was a very creative person, daydreaming all the time. I discovered that I liked Art (mainly drawing with pencil), Trading card games, imaginary games with my sister and sometimes myself (maybe a little worrying?), cartoons, comics, videos, story tapes and I also discovered that I love writing and playing the guitar.
 

@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 :root {
   --black: #121423;
   --gray: #2b3743;
   --mid: #3e5c5e;
+  --midTransparant: #3e5c5ef1;
   --darkGreen: #4e7c6e;
   --lightGreen: #90b7a0;
 }
@@ -21,7 +23,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   font-weight: normal;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .nav {
@@ -35,7 +37,7 @@ body {
 }
 
 .navTitle {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .links {
@@ -44,16 +46,29 @@ body {
 }
 
 .nav-link {
-  font-size: 1rem;
-  margin: 0 1rem;
+  font-size: 1.6rem;
+  margin: 0.2rem 0.4rem;
 }
 
 a:link,
-a:visited,
-a:hover,
-a:active {
+a:visited {
   color: var(--lightGreen);
   text-decoration: none;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+  margin: 0 0.4rem;
+}
+
+.test {
+  background-color: var(--darkGreen);
+  color: var(--lightGreen);
+}
+
+a:active,
+a:hover {
+  background-color: var(--lightGreen);
+  color: var(--gray);
+  width: 100%;
 }
 
 .main {
@@ -62,19 +77,26 @@ a:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: calc(100vh - 14rem); */
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .main .card {
-  /* height: calc(90vh - 14rem); */
-  width: 90vw;
-  background-color: var(--mid);
+  min-height: calc(100vh - 14rem);
+  width: 95vw;
+  background-color: var(--midTransparant);
   border-radius: 1rem;
   margin: 2rem 0;
+  line-height: 1.7rem;
+  font-weight: 60;
+  font-size: 1.2rem;
+  padding: 2rem 1.6rem;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.main .card p {
+  margin-bottom: 1.2rem;
 }
 
 .footer {
@@ -111,7 +133,13 @@ a:active {
   }
 
   .main {
-    height: calc(100vh - 8rem);
+    /* height: calc(100vh - 8rem); */
+  }
+
+  .main .card {
+    columns: 2;
+    gap: 2rem;
+    padding: 4rem 4rem;
   }
 
   .footer {
