@@ -52,6 +52,13 @@ body {
   height: 4rem;
 }
 
+.nav a:active,
+.nav a:hover {
+  background-color: var(--lightGreen);
+  color: var(--gray);
+  width: 100%;
+}
+
 .navTitle {
   font-size: 1.4rem;
 }
@@ -80,13 +87,6 @@ a:visited {
 .test {
   background-color: var(--darkGreen);
   color: var(--lightGreen);
-}
-
-a:active,
-a:hover {
-  background-color: var(--lightGreen);
-  color: var(--gray);
-  width: 100%;
 }
 
 .main {
