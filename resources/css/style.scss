@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
 :root {
   --black: #121423;
   --gray: #2b3743;
@@ -12,23 +13,15 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--white);
   font-family: "Russo One", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: column;
+  align-items: stretch;
   font-weight: normal;
   /* height: 100vh; */
 }
@@ -36,19 +29,10 @@ body {
 .nav {
   background-color: var(--gray);
   color: var(--mid);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   height: 4rem;
 }
 
@@ -57,8 +41,6 @@ body {
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -95,15 +77,9 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .main .card {
@@ -130,12 +106,8 @@ a:hover {
 }
 
 .footer .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style: none;
 }
 
@@ -147,37 +119,34 @@ a:hover {
 
 @media only screen and (min-width: 800px) {
   .nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 2rem;
   }
+
   .navTitle {
     font-size: 2rem;
   }
+
   .nav-link {
     font-size: 2rem;
   }
+
   .main {
     /* height: calc(100vh - 8rem); */
   }
+
   .main .card {
-    -webkit-columns: 2;
-            columns: 2;
+    columns: 2;
     gap: 2rem;
     padding: 4rem 4rem;
   }
+
   .footer {
     height: 4rem;
   }
+
   .footer .social {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
-/*# sourceMappingURL=style.css.map */
